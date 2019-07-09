@@ -1,0 +1,10 @@
+footer { 
+    padding: 15px 0;
+    clear: both;
+    font-size: 12px;
+    text-align: center;
+    border-top: 2px solid grey;
+  }
+.jumbotron {
+    background-color: navy;
+}

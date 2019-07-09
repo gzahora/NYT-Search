@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,82 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>GAHJ NYT Search</title>
 </head>
+
 <body>
 
-    <div class="containter">
-            <div class="jumbotron p-2 bg-dark text-center text-white">
-                <h1 class="display-4"><strong>New York Times Search</strong></h1>
+    <div class="container">
+        <div class="jumbotron text-center text-white">
+            <h1><strong><i class="fa fa-newspaper"> New York Times Search</i></strong></h1>
         </div>
     </div>
 
-        <script type="text/javascript" src="assets/javascript/app.js"></script>
-    
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <i class="fa fa-calendar"> Search Parameters </i>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="searchTerm">Search Term: </label>
+                        <input type="text" class="form-control" id="searchTerm" placeholder="World News">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numbRec">Number of Records to Retrieve:</label>
+                        <select class="form-control" id="numbRec">
+                            <option>5</option>
+                            <option>10</option>
+                            <option>15</option>
+                            <option>20</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="startYear">Start Year (Optional):</label>
+                        <input type="text" class="form-control" id="startYear" placeholder="2015">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="endYear">End Year (Optional):</label>
+                        <input type="text" class="form-control" id="endYear" placeholder="2019">
+                    </div>
+
+                    <div>
+                        <i class="fa fa-search"> Search </i>
+                        <i class="fa fa-trash"> Clear Results </i>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+<br><br>
+
+        <div class="card">
+            <div class="card-header">
+                <i class="fa fa-newspaper"> Top Articles</i>
+            </div>
+            <div class="card-body">
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <footer>
+            <div class="container">
+                &copy; Copyright 2019: G.A.H.J. <i class="fa fa-atom"></i>
+            </div>
+        </footer>
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
 </body>
+
 </html>
